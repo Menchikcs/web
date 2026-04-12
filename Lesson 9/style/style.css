@@ -9,15 +9,36 @@
 body{
     background-color: #e9f0ff;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
 .wrapper{
-    max-width: 1200px;
+    width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
-.header-top{
+.header{
+    background: #fff;
+    border-bottom: 1px solid #e7eefe;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px 4px;
+}
+.header-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
     column-gap: 20px;
+}
+.logo span{
+    font-size: 41px;
+    line-height: 36px;
+}
+.logo{
+    font-size: 24px;
+    line-height: 32px;
+    color: #5139f2;
+    font-weight: 700;
 }
 header nav ul{
     display: grid;
@@ -25,25 +46,189 @@ header nav ul{
     justify-content: center;
     column-gap: 20px;
 }
+header nav ul li a{
+    font-size: 16px;
+    line-height: 24px;
+}
+nav ul li a:hover{
+    color: #5139f2;
+}
 .header-btn{
     justify-self: end;
     padding: 8px 25px;
-    border-radius: 5px;
+    border: none;
+    border-radius: 10px;
+    background: #5139f2;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+.header-btn:hover{
+    background: #3019e8;
+}
+.start-studying{
+    padding: 64px 0;
+    text-align: center;
 }
 .start-studying-grid{
     display: grid;
     place-items: center center;
     row-gap: 20px;
 }
+.start-studying h1{
+    font-size: 48px;
+    line-height: 48px;
+}
+.start-studying p{
+    font-size: 20px;
+    line-height: 28px;
+    color: #4f6178;
+}
+.start-studying-buttons{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+.btn{
+    display: grid;
+    place-items: center;
+    padding: 12px 32px;
+    font-size: 18px;
+    line-height: 28px;
+    border-radius: 10px;
+    border: 2px solid #4f39f6;
+    cursor: pointer;
+    font-weight: 500;
+}
+.btn-start{
+    background: #4f39f6;
+    color: #fff;
+    font-weight: 500;
+}
+.btn-start:hover{
+    background: #2814c5;
+}
+.btn-more{
+    background: #fff;
+    color: #2814c5;
+}
+.btn-more:hover{
+    background: transparent;
+}
 .cards-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    padding-bottom: 64px;
+}
+.card{
+    background: #fff;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    row-gap: 15px;
+}
+.card-icon{
+    font-size: 48px;
+    line-height: 48px;
+}
+.card h2{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+}
+.card p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #5e656f;
+    border-bottom: 1px solid #c5c5c5;
+    padding-bottom: 15px;
+}
+.card h3{
+    font-size: 14px;
+    line-height: 20px;
+    color: #5e656f;
 }
 .tags li{
     display: inline-grid;
+    align-items: center;
+    padding: 4px 12px;
+    background: #e2e6ff;
+    color: #4a3894;
+    border-radius: 20px;
+    margin: 10px 7px 0 0;
+}
+footer{
+    background: #101727;
+    color: #fff;
+    padding: 64px 0;
 }
 .footer-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+.footer-top{
+    display: grid;
+    row-gap: 15px;
+}
+.footer-column h3{
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+.footer-column span{
+    font-size: 30px;
+    margin-right: 5px;
+}
+.footer-column p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #868e94;
+    margin-bottom: 8px;
+}
+.footer-column li{
+    font-size: 16px;
+    line-height: 24px;
+    color: #868e94;
+    margin-bottom: 8px;
+}
+.social{
+    display: flex;
+    column-gap: 15px;
+    margin-bottom: 20px;
+}
+.subscribe-title{
+    color: #7d899a;
+}
+.subscribe-grid{
+    display: grid;
+    grid-template-columns: 1fr 45px;
+    column-gap: 20px;
+}
+.subscribe-grid input{
+    background: #1e2a3a;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: #283243;
+}
+.subscribe-grid button{
+    background: #4f39f6;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+}
+.footer-bottom{
+    margin-top: 64px;
+    display: grid;
+    place-items: center center;
+}
+.footer-bottom p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #737a80;
+    margin-bottom: 8px;
 }
