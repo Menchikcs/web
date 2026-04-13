@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Karla", sans-serif;
+}
+.wrapper{
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+}
+.header-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    column-gap: 20px;
+    padding: 20px 0;
+}
+header nav ul{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    column-gap: 30px;
+}
+header nav ul li a{
+    font-size: 12px;
+    line-height: 18px;
+    color: #1D1F2E;
+}
+.cart{
+    justify-self: start;
+    padding: 8px 25px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+}
+.cart span{
+    margin-right: 10px;
+}
+.banner{
+    background: #050827;
+    text-align: center;
+}
+.banner-grid{
+    background-image: url("../images/banner1.png");
+    padding: 200px;
+    display: grid;
+    place-items: center center;
+    color: #fff;
+    row-gap: 10px;
+}
+.banner-grid p{
+    font-size: 12px;
+    line-height: 18px;
+}
+.banner-grid h2{
+    font-size: 47px;
+    line-height: 60px;
+}
+.banner-btn{
+    padding: 2px 24px;
+}
+.text{
+    margin: 75px 0;
+}
+.text h2{
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 400;
+}
+.text p{
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    font-weight: 200;
+}
+.text a{
+    color: #A25F4B;
+    text-decoration: none;
+    place-self: center;
+}
+.feat{
+    margin: 100px 0;
+    place-items: center center;
+    color: #1D1F2E;
+    font-size: 12px;
+    line-height: 18px;
+}
+.feat-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-bottom: 64px;
+}
+.price-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+}
+.more-grid{
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+.banner-bottom{
+    width: 100%;
+}
