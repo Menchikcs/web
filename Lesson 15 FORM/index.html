@@ -6,82 +6,100 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body class="wrapper">
-<header>
-    <h1>Форма прийому на роботу</h1>
-    <h2>ІТ Компанія "TechInnovate"</h2>
-    <p>Поля позначені синьою лінією є обов'язковими для заповнення</p>
-</header>
-<main>
-    <form class="pers-data">
-        <h2>Персональні дані</h2>
-        <section class="data-grid">
-            <article class="data-card">
-                Ім'я<br>
-                <input type="text" name="name" placeholder="Введіть ваше ім'я" required>
-            </article>
-            <article class="data-card">
-                Прізвище<br>
-                <input type="text" name="surname" placeholder="Введіть ваше прізвище" required>
-            </article>
-            <article class="data-card">
-                Email<br>
-                <input type="email" name="email" placeholder="example@email.com" required>
-            </article>
-            <article class="data-card">
-                Телефон<br>
-                <input type="tel" name="tel" placeholder="+380 XX XXX XX XX" required>
-            </article>
-        </section>
-    </form>
-    <form class="pers-info">
-        <h2>Професійна інформація</h2>
-        <section class="info-grid">
-            <article class="info-card">
-                Бажана позиція<br>
-                <select name="position">
-                    <option value="choose" selected>Оберіть  позицію</option>
-                    <option value="choose">Frontend Developer</option>
-                    <option value="choose">Backend Developer</option>
-                    <option value="choose">Full Stack Developer</option>
-                    <option value="choose">DevOPS Engineer</option>
-                    <option value="choose">QA Engineer</option>
-                    <option value="choose">UI/UX Designer</option>
-                    <option value="choose">Mobile Developer</option>
-                    <option value="choose">Data Scientist</option>
-                </select>
-            </article>
-            <article class="info-card">
-                Досвід роботи (років)<br>
-                <input type="number" name="dosvid" min='0' max='50' placeholder="0-50" required>
-            </article>
-            <article class="info-card">
-                Технології та навички<br>
-                <input type="text" name="skills" placeholder="React, TypeScript, Node.js, Python..." required>
-            </article>
-        </section>
-    </form>
-    <form class="dop-info">
-        <h2>Персональні дані</h2>
-        <section class="dop-info-grid">
-            <article class="dop-info-card">
-                GitHub профіль<br>
-                <input type="text" name="GitHub" placeholder="https://github.com/username" required>
-            </article>
-            <article class="dop-info-card">
-                Портфоліо<br>
-                <input type="text" name="surname" placeholder="https://yourportfolio.com">
-            </article>
-            <article class="dop-info-card">
-                Резюме<br>
-                <input type="file" name="file" required>
-            </article>
-            <article class="dop-info-card">
-                Коротко про себе<br>
-                <textarea name="aboutme" placeholder="Розкажіть про свій досвід, мотивацію та чому ви хочете приєднатися до нашої команди... (мінімум 50 символів)" required></textarea>
-            </article>
-        </section>
-    </form>
-</main>
+<body>
+<div class="wrapper">
+    <header>
+        <h1>Форма прийому на роботу</h1>
+        <h2>ІТ Компанія "TechInnovate"</h2>
+        <p>Поля позначені синьою лінією є обов'язковими для заповнення</p>
+    </header>
+    <main>
+        <form class="pers-data block">
+            <h2 class="topic">Персональні дані</h2>
+            <section class="data-grid">
+                <article class="data-card">
+                    Ім'я<br>
+                    <input type="text" name="name" placeholder="Введіть ваше ім'я" required>
+                </article>
+                <article class="data-card">
+                    Прізвище<br>
+                    <input type="text" name="surname" placeholder="Введіть ваше прізвище" required>
+                </article>
+                <article class="data-card">
+                    Email<br>
+                    <input type="email" name="email" placeholder="example@email.com" required>
+                </article>
+                <article class="data-card">
+                    Телефон<br>
+                    <input type="tel" name="tel" placeholder="+380 XX XXX XX XX" required>
+                </article>
+            </section>
+        </form>
+        <form class="pers-info block">
+            <h2 class="topic">Професійна інформація</h2>
+            <section class="info-grid">
+                <article class="info-card">
+                    Бажана позиція<br>
+                    <select name="position">
+                        <option value="choose" selected>Оберіть  позицію</option>
+                        <option value="choose">Frontend Developer</option>
+                        <option value="choose">Backend Developer</option>
+                        <option value="choose">Full Stack Developer</option>
+                        <option value="choose">DevOPS Engineer</option>
+                        <option value="choose">QA Engineer</option>
+                        <option value="choose">UI/UX Designer</option>
+                        <option value="choose">Mobile Developer</option>
+                        <option value="choose">Data Scientist</option>
+                    </select>
+                </article>
+                <article class="info-card">
+                    Досвід роботи (років)<br>
+                    <input type="number" name="dosvid" min='0' max='50' placeholder="0-50" required>
+                </article>
+                <article class="info-card">
+                    Технології та навички<br>
+                    <input type="text" name="skills" placeholder="React, TypeScript, Node.js, Python..." required>
+                </article>
+            </section>
+        </form>
+        <form class="dop-info block">
+            <h2 class="topic">Персональні дані</h2>
+            <section class="dop-info-grid">
+                <article class="dop-info-card">
+                    GitHub профіль<br>
+                    <input type="text" name="GitHub" placeholder="https://github.com/username" required>
+                </article>
+                <article class="dop-info-card">
+                    Портфоліо<br>
+                    <input type="text" name="surname" placeholder="https://yourportfolio.com">
+                </article>
+                <article class="dop-info-card">
+                    Резюме<br>
+                    <input type='file' name="file" required class="file">
+                </article>
+                <article class="dop-info-card">
+                    Коротко про себе<br>
+                    <textarea rows="5" name="about_me" placeholder="Розкажіть про свій досвід, мотивацію та чому ви хочете приєднатися до нашої команди... (мінімум 50 символів)" required></textarea>
+                </article>
+            </section>
+        </form>
+        <div class="label block">
+            <label>
+                <input type="checkbox" name="Zgoda" value="Zgoda" required>
+                Я даю згоду на обробку персональних даних та підтверджую, що вся надана інформація є достовірною
+            </label>
+        </div>
+        <button type="submit" class="submit">Надіслати заявку</button>
+    </main>
+    <footer>
+        <h2>💡 Підказки по заповненню:</h2>
+        <ul>
+            <li>✓ Зелена рамка — поле заповнено правильно</li>
+            <li>✗ Червона рамка — поле заповнено неправильно</li>
+            <li>→ Синя лінія зліва — обов'язкове поле</li>
+            <li>↗ Наведіть курсор на поле для ефекту підсвічування</li>
+        </ul>
+    </footer>
+</div>
 </body>
 </html>
